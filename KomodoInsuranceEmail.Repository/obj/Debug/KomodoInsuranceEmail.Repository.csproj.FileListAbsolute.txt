@@ -1,0 +1,2 @@
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoInsuranceEmail.Repository\obj\Debug\KomodoInsuranceEmail.Repository.csproj.AssemblyReference.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoInsuranceEmail.Repository\obj\Debug\KomodoInsuranceEmail.Repository.csproj.CoreCompileInputs.cache

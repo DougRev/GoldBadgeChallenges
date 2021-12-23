@@ -1,0 +1,11 @@
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.csproj.CoreCompileInputs.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\bin\Debug\KomodoClaims.UI.exe.config
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\bin\Debug\KomodoClaims.UI.exe
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\bin\Debug\KomodoClaims.UI.pdb
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\bin\Debug\02_KomodoClaims.Reposiory.dll
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\bin\Debug\02_KomodoClaims.Reposiory.pdb
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.csproj.AssemblyReference.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.csproj.CopyComplete
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.exe
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims.UI\obj\Debug\KomodoClaims.UI.pdb

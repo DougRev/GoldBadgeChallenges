@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a99a5eeb-c6fb-4727-950a-b9905cf9d3f0": {
+      "ProjectGuid": "a99a5eeb-c6fb-4727-950a-b9905cf9d3f0",
+      "DisplayName": "01_KomodoCafe.UI",
+      "ColorIndex": 0
+    },
+    "7e70a99f-0215-4b0f-a843-de98e4a8e14e": {
+      "ProjectGuid": "7e70a99f-0215-4b0f-a843-de98e4a8e14e",
+      "DisplayName": "01_KomodoCafe.Repository",
+      "ColorIndex": 1
+    },
+    "91881f78-5f09-420d-9e4f-222147c49f6e": {
+      "ProjectGuid": "91881f78-5f09-420d-9e4f-222147c49f6e",
+      "DisplayName": "02_KomodoClaims.Reposiory",
+      "ColorIndex": 2
+    },
+    "9922af0a-4195-4af8-a6bf-00aea1eaa993": {
+      "ProjectGuid": "9922af0a-4195-4af8-a6bf-00aea1eaa993",
+      "DisplayName": "KomodoClaims.UI",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a640fddc-754f-4113-b5cf-cc174e95d408": {
+      "ProjectGuid": "a640fddc-754f-4113-b5cf-cc174e95d408",
+      "DisplayName": "KomodoInsuranceEmail.Repository",
+      "ColorIndex": 4
+    },
+    "29f7c38e-f245-49b7-89ab-d9af47108ca4": {
+      "ProjectGuid": "29f7c38e-f245-49b7-89ab-d9af47108ca4",
+      "DisplayName": "KomodoInsuranceEmail.UI",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
