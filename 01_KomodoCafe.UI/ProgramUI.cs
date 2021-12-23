@@ -144,15 +144,7 @@ namespace _01_KomodoCafe.UI
                 Console.WriteLine("Which item would you like to remove?");
 
                 int index = 0;
-            /*foreach (MenuItem item in GetAllMenuItems())
-                {
-                    Console.WriteLine($"{index + 1}. {item.Title}");
-                }
-                string optionString = Console.ReadLine();
-                int option = Convert.ToInt32(optionString);
-
-            MenuItem itemToDelete = ViewAllMenuItems() [option - 1];
-            _repo.DeleteExistingContent(itemToDelete);*/
+            
         }
     }
 }
