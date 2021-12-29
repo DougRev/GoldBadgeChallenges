@@ -1,2 +1,3 @@
 C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoInsuranceEmail.UI\obj\Debug\KomodoInsuranceEmail.UI.csproj.SuggestedBindingRedirects.cache
 C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoInsuranceEmail.UI\obj\Debug\KomodoInsuranceEmail.UI.csproj.CoreCompileInputs.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\KomodoInsuranceEmail.UI\obj\Debug\KomodoInsuranceEmail.UI.csproj.AssemblyReference.cache

@@ -6,22 +6,42 @@ using System.Threading.Tasks;
 
 namespace _02_KomodoClaims.Reposiory
 {
-    public class ClaimsRepository
+    /*public class ClaimsRepository
     {
         private readonly List<Claim> _claimsDirectory = new List<Claim>();
 
+        private int _count;
+
         public bool AddAClaim(Claim claim)
         {
-            int startingcount = _claimsDirectory.Count;
-            _claimsDirectory.Add(claim);
-
-            bool wasAdded = (_claimsDirectory.Count > startingcount);
-            return wasAdded;
+            if (claim is null)
+            {
+                return false;
+            }
+            else
+            {
+                _count++;
+                claim.ClaimID = _count;
+                _claimsDirectory.Add(claim);
+                return true;
+            }
         }
-
-        public List<Claim> ViewAllClaims()
+        public List<Claim> GetClaims()
         {
             return _claimsDirectory;
+        }
+
+        public bool DelteClaim(int claimID)
+        {
+            foreach (var claim in _claimsDirectory)
+            {
+                if (claim.ClaimID == claimID)
+                {
+                    _claimsDirectory.Remove(claim);
+                    return true;
+                }
+            }
+            return false;
         }
 
         public Claim GetClaimbyID(int claimId)
@@ -33,10 +53,8 @@ namespace _02_KomodoClaims.Reposiory
                 }
             return null;
         }
-        //Update.
         public bool UpdateExistingClaim(int claimId, Claim claim)
         {
-            //find the old content...
             Claim oldClaim = GetClaimbyID(claimId);
 
             if (oldClaim != null)
@@ -59,5 +77,6 @@ namespace _02_KomodoClaims.Reposiory
             bool deleteResult = _claimsDirectory.Remove(existingclaim);
             return deleteResult;
         }
-    }
+    }*/
 }
+

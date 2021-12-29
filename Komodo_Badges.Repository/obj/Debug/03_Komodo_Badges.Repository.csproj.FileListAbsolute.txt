@@ -1,0 +1,6 @@
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\bin\Debug\Komodo_Badges.Repository.dll
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\bin\Debug\Komodo_Badges.Repository.pdb
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\obj\Debug\03_Komodo_Badges.Repository.csproj.AssemblyReference.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\obj\Debug\03_Komodo_Badges.Repository.csproj.CoreCompileInputs.cache
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\obj\Debug\Komodo_Badges.Repository.dll
+C:\Users\DJ Revell\source\repos\GoldBadgeChallenges\GoldBadgeChallenges\Komodo_Badges.Repository\obj\Debug\Komodo_Badges.Repository.pdb

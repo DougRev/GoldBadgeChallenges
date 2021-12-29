@@ -9,21 +9,24 @@ namespace _01_KomodoCafe.UI
 {
     public class ProgramUI
     {
+        private readonly MenuItemRepository _menuRepo = new MenuItemRepository();
         public void Run()
         {
+            SeedContent();
             Directory();
         }
         public void Directory()
         {
-            bool continueToRun = true;
-            while (continueToRun)
+            bool isRunning = true;
+            while (isRunning)
             {
-                Console.Clear();
+         
                 Console.WriteLine("Please make a selection from the following:\n" +
                 "1. Create New Menu Item\n" +
                 "2. Delete Menu Items\n" +
                 "3. View All Menu Items\n" +
-                "4. Exit\n");
+                "4. Get Grocery List\n" +
+                "10. Exit\n");
 
                 string userInput = Console.ReadLine();
 
@@ -39,7 +42,10 @@ namespace _01_KomodoCafe.UI
                         ViewAllMenuItems();
                         break;
                     case "4":
-                        continueToRun = false;
+                        GetIngredients();
+                        break;
+                    case "10":
+                        isRunning = false;
                         break;
                     default:
                         Console.WriteLine("Please Enter A Number Between 1-4.\n" +
@@ -47,104 +53,122 @@ namespace _01_KomodoCafe.UI
                         Console.ReadKey();
                         break;
                 }
+                Console.Clear();
             }
         }
+
+        private void GetIngredients()
+        {
+            Console.Clear();
+            List<MenuItem> ingredientList = _menuRepo.GetMenuItems();
+            foreach (var item in ingredientList)
+            {
+                DisplayIngredients(item);
+            }
+            Console.ReadKey();
+        }
+
         public void ViewAllMenuItems()
         {
-            bool continueToRun = true;
-            while (continueToRun)
+            Console.Clear();
+            List<MenuItem> allMenuItems = _menuRepo.GetMenuItems();
+            foreach (var item in allMenuItems)
             {
-                Console.Clear();
-                Console.WriteLine(
-                    "Choose your Menu Item Selection:\n" +
-                    "1. Cheeseburger\n" +
-                    "2. Hot Dog\n" +
-                    "3. Salad\n" +
-                    "4. Exit\n");
-
-                string userInput = Console.ReadLine();
-
-                switch (userInput)
-                {
-                    case "1":
-                        CheeseburgerMeal();
-                        break;
-                    case "2":
-                        HotDogMeal();
-                        break;
-                    case "3":
-                        SaladMeal();
-                        break;
-                    case "4":
-                        continueToRun = false;
-                        break;
-                    default:
-                        Console.WriteLine("Please Enter A Number Between 1-4.\n" +
-                            "Press any key to continue......");
-                        Console.ReadKey();
-                        break;
-                }
+                DisplayItemDetails(item);
             }
+            Console.ReadKey();
         }
-            public void CheeseburgerMeal()
-            {
-                Console.Clear();
-                Console.WriteLine("This 8oz 80/20 Burger comes with lettuce,tomato,onion,pickle on the side and you can add as much ketchup, mayo, and mustard as you like.\n" +
-                   "Price is 6.99");
-                Console.ReadKey(true);
-            }
 
-            public void HotDogMeal()
+        private void DisplayItemDetails(MenuItem item)
+        {
+            Console.WriteLine($"Item.MealName: {item.MealName}\n" +
+                $"Item.MealNumber: {item.MealNumber}\n" +
+                $"Item.ItemType: {item.ItemType}\n" +
+                $"Item.Ingredients: {item.Ingredients}\n" +
+                $"Item.Description: {item.Description}\n" +
+                $"Item.Price: {item.Price}\n" +
+                $"------------------------------------------------\n");
+        }
+
+        private void DisplayIngredients(MenuItem item)
+        {
+            Console.WriteLine($"Item.Ingredients: {item.Ingredients}\n");
+        }
+           
+
+        private void CreateNewMenuItem()
+        {
+            Console.Clear();
+            MenuItem item = new MenuItem();
+
+            Console.WriteLine("Are you adding a Food or Beverage?\n" +
+            "1. Food\n" +
+            "2. Beverage\n");
+
+            var itemType = int.Parse(Console.ReadLine());
+            item.ItemType = (ItemType)itemType;
+
+            Console.WriteLine("What is the Meal Number?");
+            var mealNumber = int.Parse((Console.ReadLine()));
+            item.MealNumber = mealNumber;
+
+            Console.WriteLine("What is the Meal Name?");
+            var mealName = Console.ReadLine();
+            item.MealName = mealName;
+
+            Console.WriteLine("What are the ingredients?");
+            var ingredients = Console.ReadLine();
+            item.Ingredients = ingredients;
+
+            Console.WriteLine("What is the description of the item?");
+            var description = Console.ReadLine();
+            item.Description = description;
+
+            Console.WriteLine("What is the price of the item?");
+            double price = int.Parse(Console.ReadLine());
+            item.Price = price;
+
+            bool success = _menuRepo.AddNewMenuItem(item);
+            if (success)
             {
-                Console.WriteLine("This is a hodog with and it comes standard with ketchup, mustard and a run through the garden!\n" +
-                    "Price 5.99");
+                Console.WriteLine($"{item.MealName} has been added to the database");
+            }
+            else
+            {
+                Console.WriteLine("Item was not added to menu.");
+            }
             Console.ReadKey();
-            }
+        }
 
-            public void SaladMeal()
+        public void DeleteMenuItem()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter the name of the item you want to remove?");
+            string mealName = Console.ReadLine();
+            bool success = _menuRepo.DeleteMenuItem(mealName);
+            if (success)
             {
-                Console.WriteLine("This is our Seasonal salad with fresh greens and 8oz of our Organic grilled chicken.\n" +
-                    "Price 8.99");
+                Console.WriteLine($"{mealName} has been removed.");
+            }
+            else
+            {
+                Console.WriteLine("Item was not removed.");
+            }
             Console.ReadKey();
-            }
 
-            private void CreateNewMenuItem()
-            {
-                Console.Clear();
-                MenuItem item;
-                bool inputIsValid;
-                do
-                {
-                    inputIsValid = true;
-                    Console.WriteLine("Are you adding a Food or Beverage?\n" +
-                    "1. Food\n" +
-                    "2. Beverage");
 
-                    string choice = Console.ReadLine();
-                    switch (choice)
-                    {
-                        case "1":
-                            item = new MenuItem();
-                            break;
-                        case "2":
-                            item = new MenuItem();
-                            break;
-                        default:
-                            inputIsValid = false;
-                            Console.WriteLine("Please enter a valid selection");
-                            Console.ReadKey();
-                            break;
-                    }
-                } while (!inputIsValid);
-            }
+        }
 
-            public void DeleteMenuItem()
-            {
-                Console.Clear();
-                Console.WriteLine("Which item would you like to remove?");
-
-                int index = 0;
-            
+        public void SeedContent()
+        {
+          MenuItem itemA = new MenuItem("CheeseBurger",ItemType.Food, "2 Beef Patties + Garden Veggies.");
+          MenuItem itemB = new MenuItem("HotDog", ItemType.Food, "1 Hot Dog + Ketchup, Mustard, Relish");
+          MenuItem itemC = new MenuItem("Soda", ItemType.Beverage, "6 total sodas from Coke");
+          MenuItem itemD = new MenuItem("Milkshake", ItemType.Beverage, "Vanilla, Chocolate, Strawberry Ice Cream, Whole Milk");
+         _menuRepo.AddNewMenuItem(itemA);
+         _menuRepo.AddNewMenuItem(itemB);
+         _menuRepo.AddNewMenuItem(itemC);
+         _menuRepo.AddNewMenuItem(itemD);
         }
     }
 }

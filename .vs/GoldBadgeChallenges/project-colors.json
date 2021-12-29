@@ -35,7 +35,17 @@
       "ProjectGuid": "29f7c38e-f245-49b7-89ab-d9af47108ca4",
       "DisplayName": "KomodoInsuranceEmail.UI",
       "ColorIndex": 5
+    },
+    "bcb42b2b-8ebe-4bc9-ab12-3b354c01a485": {
+      "ProjectGuid": "bcb42b2b-8ebe-4bc9-ab12-3b354c01a485",
+      "DisplayName": "03_Komodo_Badges.Repository",
+      "ColorIndex": 6
+    },
+    "582f7976-c1d2-49da-aa8a-6f30592ff27c": {
+      "ProjectGuid": "582f7976-c1d2-49da-aa8a-6f30592ff27c",
+      "DisplayName": "KomodoBadge.UI",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 8
 }

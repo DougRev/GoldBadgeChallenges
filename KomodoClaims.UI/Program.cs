@@ -11,9 +11,9 @@ namespace KomodoClaims.UI
         static void Main(string[] args)
         {
             
-            ProgramUI ui = new ProgramUI();
+            ProgramUI UI = new ProgramUI();
 
-            ui.Run();
+            UI.Run();
 
         }
 
